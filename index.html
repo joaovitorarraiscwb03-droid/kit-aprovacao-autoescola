@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1e3f" />
+<title>Kit Aprovação Autoescola — Revise e chegue confiante na prova</title>
+<meta name="description" content="Guia digital para revisar o que mais reprova na prova da autoescola: checklist, placas, erros comuns e controle do nervosismo. Apenas R$19,90." />
+<link rel="canonical" href="/" />
+<meta property="og:title" content="Kit Aprovação Autoescola — R$19,90" />
+<meta property="og:description" content="Revise os pontos que mais reprovam candidatos e chegue ao exame mais calmo, preparado e confiante." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/assets/kit-mockup.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Tailwind Play CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: { 900:'#0b1e3f', 800:'#13305f', 700:'#1a4083', 500:'#3b82f6', 300:'#93c5fd', 50:'#eff6ff' },
+          cta:   { DEFAULT:'#f97316', dark:'#ea580c', soft:'#fed7aa' },
+          success:'#16a34a',
+          danger:'#dc2626',
+        },
+        fontFamily: { sans:['Inter','system-ui','sans-serif'] },
+        boxShadow: {
+          soft:'0 10px 30px -10px rgba(11,30,63,.18)',
+          glow:'0 20px 60px -15px rgba(11,30,63,.35)',
+          cta:'0 10px 30px -8px rgba(249,115,22,.55)',
+        },
+        backgroundImage: {
+          'gradient-hero':'linear-gradient(135deg,#0b1e3f 0%,#13305f 60%,#1a4083 100%)',
+          'gradient-soft':'linear-gradient(180deg,#f8fafc 0%,#e0ecff 100%)',
+          'gradient-cta':'linear-gradient(135deg,#fb923c 0%,#ea580c 100%)',
+        },
+        keyframes: {
+          float:{ '0%,100%':{ transform:'translateY(0)'},'50%':{ transform:'translateY(-12px)'}},
+          pulseCta:{ '0%,100%':{ boxShadow:'0 10px 30px -8px rgba(249,115,22,.5)'},'50%':{ boxShadow:'0 14px 40px -8px rgba(249,115,22,.85)'}},
+        },
+        animation: { float:'float 6s ease-in-out infinite', 'pulse-cta':'pulseCta 2.4s ease-in-out infinite' }
+      }
+    }
+  }
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  html,body{ font-family:'Inter',system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+  /* Mobile tap target */
+  a,button{ touch-action:manipulation; }
+</style>
+
+<!-- ============ META PIXEL ============ -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1294772135575724');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1294772135575724&ev=PageView&noscript=1"/></noscript>
+
+<!-- ============ UTMIFY UTMs ============ -->
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async defer></script>
+
+<!-- ============ UTMIFY PIXEL ============ -->
+<script>
+  window.pixelId = "6a0f9d418dd9aa642c34ce72";
+  var a = document.createElement("script");
+  a.setAttribute("async","");
+  a.setAttribute("defer","");
+  a.setAttribute("src","https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<script>
+  // Tracking helper para o botão de checkout
+  window.__CHECKOUT_URL__ = "https://pay.wiapy.com/0xRMHrqGBl";
+  function trackCheckout(e){
+    try { if (window.fbq) fbq('track','InitiateCheckout'); } catch(_){}
+    try { if (window.utmify && window.utmify.track) window.utmify.track('InitiateCheckout'); } catch(_){}
+    // deixa o navegador seguir o link normalmente (utmify reescreve os UTMs)
+  }
+</script>
+</head>
+
+<body class="bg-white text-slate-900 overflow-x-hidden">
+
+<main>
+<!-- HERO -->
+<section class="relative bg-gradient-hero text-white pt-10 pb-16 md:pt-16 md:pb-24">
+  <div class="absolute inset-0 opacity-10 pointer-events-none">
+    <div class="absolute -left-20 top-20 h-72 w-72 rounded-full bg-white blur-3xl"></div>
+    <div class="absolute right-0 top-1/2 h-96 w-96 rounded-full bg-brand-300 blur-3xl"></div>
+  </div>
+  <div class="relative mx-auto max-w-6xl px-4 md:px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <span class="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-wider backdrop-blur">🚗 Primeira habilitação · Teórica e Prática</span>
+      <h1 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.05] tracking-tight">
+        Vai fazer o exame da autoescola e está com <span class="text-cta-soft">medo de reprovar?</span>
+      </h1>
+      <p class="mt-5 text-lg md:text-xl text-white/90">Revise os pontos que mais fazem candidatos perderem a prova e chegue no exame mais calmo, preparado e confiante.</p>
+      <p class="mt-4 text-sm md:text-base text-white/75">Muita gente não reprova porque não sabe dirigir. Reprova porque fica nervosa, esquece detalhes simples, não olha o retrovisor, esquece a seta, se confunde com placas ou trava na hora da avaliação.</p>
+
+      <div class="mt-7">
+        <a href="https://pay.wiapy.com/0xRMHrqGBl" onclick="trackCheckout(event)" rel="noopener"
+           class="inline-flex w-full max-w-xl items-center justify-center gap-2 rounded-xl bg-gradient-cta text-white font-extrabold tracking-tight shadow-cta animate-pulse-cta px-6 py-5 text-lg md:text-xl active:scale-[.99]">
+          QUERO ACESSAR O KIT POR R$19,90 →
+        </a>
+        <p class="mt-3 text-sm text-white/80 text-center md:text-left">Acesso imediato • Material digital • Garantia de 7 dias</p>
+      </div>
+
+      <ul class="mt-6 flex flex-wrap gap-2 text-xs">
+        <li class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 backdrop-blur">✓ Checklist incluso</li>
+        <li class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 backdrop-blur">✓ Resumo de placas</li>
+        <li class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 backdrop-blur">✓ Erros que reprovam</li>
+        <li class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 backdrop-blur">✓ Controle do nervosismo</li>
+        <li class="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1.5 backdrop-blur">✓ Acesso imediato</li>
+      </ul>
+    </div>
+
+    <div class="relative mx-auto w-full max-w-md md:max-w-none">
+      <div class="absolute inset-0 -z-10 mx-auto h-full w-3/4 rounded-full bg-brand-300/30 blur-3xl"></div>
+      <img src="/assets/kit-mockup.png" alt="Mockup do Kit Aprovação Autoescola em ebook, tablet e celular"
+           width="1024" height="1024" class="mx-auto w-full animate-float drop-shadow-2xl" />
+    </div>
+  </div>
+</section>
+
+<!-- DOR -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="mx-auto max-w-6xl px-4 md:px-6">
+    <div class="mx-auto mb-10 max-w-3xl text-center">
+      <span class="mb-3 inline-block rounded-full bg-brand-50 text-brand-800 px-3 py-1 text-xs font-semibold uppercase tracking-wider">O problema real</span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">O problema não é só saber dirigir. É lembrar do que fazer na hora da pressão.</h2>
+      <p class="mt-4 text-base md:text-lg text-slate-600">Na autoescola você aprende a dirigir, mas no dia do exame tudo pode parecer diferente. A perna treme, a mão sua, a mente acelera e detalhes simples podem ser esquecidos.</p>
+    </div>
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- dores -->
+      <script>/* render below */</script>
+      <div class="flex items-start gap-3 rounded-xl border bg-white p-4 shadow-soft"><span class="text-danger text-xl">⚠️</span><p class="text-sm font-medium">Medo de reprovar por erro bobo</p></div>
+      <div class="flex items-start gap-3 rounded-xl border bg-white p-4 shadow-soft"><span class="text-danger text-xl">🧠</span><p class="text-sm font-medium">Nervosismo antes da prova</p></div>
+      <div class="flex items-start gap-3 rounded-xl border bg-white p-4 shadow-soft"><span class="text-danger text-xl">🚘</span><p class="text-sm font-medium">Esquecer seta ou retrovisor</p></div>
+      <div class="flex items-start gap-3 rounded-xl border bg-white p-4 shadow-soft"><span class="text-danger text-xl">🚸</span><p class="text-sm font-medium">Confundir placas de trânsito</p></div>
+      <div class="flex items-start gap-3 rounded-xl border bg-white p-4 shadow-soft"><span class="text-danger text-xl">⚠️</span><p class="text-sm font-medium">Deixar o carro morrer</p></div>
+      <div class="flex items-start gap-3 rounded-xl border bg-white p-4 shadow-soft"><span class="text-danger text-xl">📋</span><p class="text-sm font-medium">Não saber o que o examinador observa</p></div>
+      <div class="flex items-start gap-3 rounded-xl border bg-white p-4 shadow-soft"><span class="text-danger text-xl">🧠</span><p class="text-sm font-medium">Travar durante a avaliação</p></div>
+      <div class="flex items-start gap-3 rounded-xl border bg-white p-4 shadow-soft"><span class="text-danger text-xl">⚠️</span><p class="text-sm font-medium">Já ter reprovado e estar inseguro</p></div>
+    </div>
+    <p class="mx-auto mt-10 max-w-2xl text-center text-base md:text-lg text-slate-600">Por isso, antes do exame, você precisa revisar o que realmente importa de forma simples, rápida e organizada.</p>
+  </div>
+</section>
+
+<!-- SOLUÇÃO -->
+<section class="py-16 md:py-24 bg-gradient-soft">
+  <div class="mx-auto max-w-6xl px-4 md:px-6">
+    <div class="mx-auto mb-10 max-w-3xl text-center">
+      <span class="mb-3 inline-block rounded-full bg-brand-50 text-brand-800 px-3 py-1 text-xs font-semibold uppercase tracking-wider">A solução</span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">Conheça o Kit Aprovação Autoescola</h2>
+      <p class="mt-4 text-base md:text-lg text-slate-600">Um guia prático para revisar os pontos essenciais antes da prova e chegar mais seguro no dia do exame.</p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <img src="/assets/kit-mockup.png" loading="lazy" alt="Kit Aprovação Autoescola" width="1024" height="1024" class="mx-auto w-full max-w-md drop-shadow-xl" />
+      <div>
+        <p class="text-base md:text-lg text-slate-600">O Kit Aprovação Autoescola foi criado para ajudar candidatos da primeira habilitação a se prepararem melhor para a prova teórica e prática, com orientações simples, checklist, resumo de placas, cuidados no carro e erros que devem ser evitados.</p>
+        <ul class="mt-6 space-y-3">
+          <li class="flex gap-3"><span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-800 text-white text-sm">✓</span>Revise o que fazer antes da prova</li>
+          <li class="flex gap-3"><span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-800 text-white text-sm">✓</span>Saiba quais erros evitar</li>
+          <li class="flex gap-3"><span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-800 text-white text-sm">✓</span>Confira os principais cuidados antes de entrar no carro</li>
+          <li class="flex gap-3"><span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-800 text-white text-sm">✓</span>Revise placas e sinalizações importantes</li>
+          <li class="flex gap-3"><span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-800 text-white text-sm">✓</span>Aprenda a controlar o nervosismo</li>
+          <li class="flex gap-3"><span class="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-800 text-white text-sm">✓</span>Use um checklist final antes do exame</li>
+        </ul>
+        <div class="mt-8">
+          <a href="https://pay.wiapy.com/0xRMHrqGBl" onclick="trackCheckout(event)" rel="noopener"
+             class="inline-flex w-full max-w-xl items-center justify-center gap-2 rounded-xl bg-gradient-cta text-white font-extrabold shadow-cta animate-pulse-cta px-5 py-4 text-base md:text-lg">
+            QUERO ME PREPARAR AGORA →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="mx-auto max-w-6xl px-4 md:px-6">
+    <div class="mx-auto mb-10 max-w-3xl text-center">
+      <span class="mb-3 inline-block rounded-full bg-brand-50 text-brand-800 px-3 py-1 text-xs font-semibold uppercase tracking-wider">O que você recebe</span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">Tudo dentro do Kit Aprovação Autoescola</h2>
+    </div>
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="rounded-2xl border bg-white p-6 shadow-soft">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-800 text-xl">📘</div>
+        <h3 class="text-lg font-bold">Guia completo do exame</h3>
+        <p class="mt-2 text-sm text-slate-600">Material direto ao ponto para entender como se preparar para a prova teórica e prática.</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-6 shadow-soft">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-800 text-xl">📋</div>
+        <h3 class="text-lg font-bold">Checklist final do dia da prova</h3>
+        <p class="mt-2 text-sm text-slate-600">Revise documentos, horário, calma, atenção, retrovisores, seta, postura e cuidados antes da avaliação.</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-6 shadow-soft">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-800 text-xl">🚸</div>
+        <h3 class="text-lg font-bold">Resumo das placas</h3>
+        <p class="mt-2 text-sm text-slate-600">Regulamentação, advertência, indicação, serviços, limites de velocidade e sinalização.</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-6 shadow-soft">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-800 text-xl">⚠️</div>
+        <h3 class="text-lg font-bold">Erros que mais reprovam</h3>
+        <p class="mt-2 text-sm text-slate-600">Veja os erros bobos que podem custar sua aprovação: seta, retrovisor, parada obrigatória e mais.</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-6 shadow-soft">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-800 text-xl">🧠</div>
+        <h3 class="text-lg font-bold">Controle do nervosismo</h3>
+        <p class="mt-2 text-sm text-slate-600">Orientações simples para manter a calma, respirar melhor e focar no próximo passo.</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-6 shadow-soft">
+        <div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-brand-50 text-brand-800 text-xl">🚗</div>
+        <h3 class="text-lg font-bold">Prova teórica e prática</h3>
+        <p class="mt-2 text-sm text-slate-600">Conteúdo para revisar antes da prova e chegar mais preparado para o momento da avaliação.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ANTES x DEPOIS -->
+<section class="py-16 md:py-24 bg-gradient-soft">
+  <div class="mx-auto max-w-6xl px-4 md:px-6">
+    <div class="mx-auto mb-10 max-w-3xl text-center">
+      <span class="mb-3 inline-block rounded-full bg-brand-50 text-brand-800 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Antes x Depois</span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">Imagine chegar no exame sabendo exatamente o que revisar e o que evitar</h2>
+      <p class="mt-4 text-base md:text-lg text-slate-600">Em vez de ir para a prova apenas torcendo para dar certo, você vai revisar os principais pontos, conferir seu checklist e entrar no carro com mais clareza.</p>
+    </div>
+    <div class="grid gap-5 md:grid-cols-2">
+      <div class="rounded-2xl border-2 border-danger/30 bg-white p-6 md:p-8">
+        <h3 class="mb-5 flex items-center gap-2 text-xl font-bold text-danger">✗ ANTES</h3>
+        <ul class="space-y-3 text-slate-700">
+          <li>✗ Chega nervoso e inseguro</li>
+          <li>✗ Não sabe o que revisar</li>
+          <li>✗ Fica com medo de esquecer detalhes</li>
+          <li>✗ Vai para a prova no improviso</li>
+          <li>✗ Tem medo de reprovar novamente</li>
+        </ul>
+      </div>
+      <div class="rounded-2xl border-2 border-success/40 bg-white p-6 md:p-8 shadow-glow">
+        <h3 class="mb-5 flex items-center gap-2 text-xl font-bold text-success">✓ DEPOIS</h3>
+        <ul class="space-y-3 font-medium">
+          <li>✓ Chega mais preparado</li>
+          <li>✓ Revisa os pontos principais</li>
+          <li>✓ Sabe quais erros evitar</li>
+          <li>✓ Usa um checklist antes da prova</li>
+          <li>✓ Entra no carro com mais confiança</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OBJEÇÕES -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="mx-auto max-w-3xl px-4 md:px-6">
+    <div class="mx-auto mb-10 max-w-3xl text-center">
+      <span class="mb-3 inline-block rounded-full bg-brand-50 text-brand-800 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Talvez você esteja pensando...</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Tira suas dúvidas antes de decidir</h2>
+    </div>
+    <div class="divide-y border rounded-2xl bg-white">
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">Mas eu já faço aula na autoescola.<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">Perfeito. O kit não substitui suas aulas. Ele serve como uma preparação extra para revisar os detalhes que muita gente esquece no dia da prova.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">Será que isso serve para mim?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">Serve para quem vai fazer a prova teórica, prática, primeira habilitação ou para quem já reprovou e quer se preparar melhor antes de tentar novamente.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">Tenho medo de continuar nervoso.<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">O objetivo não é eliminar totalmente o nervosismo, mas ajudar você a chegar mais organizado, consciente e confiante, sabendo o que observar antes e durante o exame.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">E se eu não tiver muito tempo para estudar?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">O material foi feito para revisão rápida e prática. Você pode acessar pelo celular e revisar os pontos principais antes da prova.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">Isso garante que eu vou passar?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">Nenhum material sério pode garantir aprovação, porque o resultado depende do seu desempenho, treino, atenção e regras do exame. O kit ajuda você a se preparar melhor e evitar erros comuns.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">É material físico?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">Não. É um produto digital. Após a compra, você recebe acesso ao material para estudar pelo celular, computador ou tablet.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- STACK DE VALOR -->
+<section class="py-16 md:py-24 bg-gradient-soft">
+  <div class="mx-auto max-w-3xl px-4 md:px-6">
+    <div class="mx-auto mb-10 max-w-3xl text-center">
+      <span class="mb-3 inline-block rounded-full bg-brand-50 text-brand-800 px-3 py-1 text-xs font-semibold uppercase tracking-wider">Quanto vale tudo isso?</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Tudo que você precisa revisar antes da prova em um único kit</h2>
+    </div>
+    <div class="overflow-hidden rounded-2xl border bg-white shadow-soft">
+      <div class="flex items-center justify-between border-b px-5 py-4"><span class="flex items-center gap-3 font-medium">✅ Guia de preparação para o exame</span><span class="font-semibold text-slate-500 line-through">R$27</span></div>
+      <div class="flex items-center justify-between border-b px-5 py-4"><span class="flex items-center gap-3 font-medium">✅ Checklist final do dia da prova</span><span class="font-semibold text-slate-500 line-through">R$17</span></div>
+      <div class="flex items-center justify-between border-b px-5 py-4"><span class="flex items-center gap-3 font-medium">✅ Resumo de placas de trânsito</span><span class="font-semibold text-slate-500 line-through">R$19</span></div>
+      <div class="flex items-center justify-between border-b px-5 py-4"><span class="flex items-center gap-3 font-medium">✅ Lista de erros que mais reprovam</span><span class="font-semibold text-slate-500 line-through">R$17</span></div>
+      <div class="flex items-center justify-between border-b px-5 py-4"><span class="flex items-center gap-3 font-medium">✅ Guia para controlar o nervosismo</span><span class="font-semibold text-slate-500 line-through">R$17</span></div>
+      <div class="flex items-center justify-between bg-brand-50 px-5 py-4"><span class="font-bold text-brand-800">Valor total percebido</span><span class="text-lg font-bold text-brand-800 line-through">R$97</span></div>
+      <div class="bg-gradient-hero px-5 py-6 text-center text-white">
+        <p class="text-sm uppercase tracking-widest text-white/80">Hoje por apenas</p>
+        <p class="mt-1 text-5xl md:text-6xl font-extrabold tracking-tight">R$19,90</p>
+        <p class="mt-2 text-sm text-white/80">Por menos de R$20, você acessa um kit completo de revisão.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OFERTA PRINCIPAL -->
+<section id="oferta" class="py-16 md:py-24 bg-gradient-hero text-white">
+  <div class="mx-auto max-w-3xl px-4 md:px-6 text-center">
+    <div class="mx-auto mb-10 max-w-3xl">
+      <span class="mb-3 inline-block rounded-full bg-white/15 text-white px-3 py-1 text-xs font-semibold uppercase tracking-wider">Oferta especial</span>
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight">Acesse agora o Kit Aprovação Autoescola</h2>
+      <p class="mt-4 text-white/80">Prepare-se antes da prova e evite chegar no exame dependendo apenas da sorte.</p>
+    </div>
+    <div class="rounded-3xl bg-white p-6 md:p-10 text-left text-slate-900 shadow-glow">
+      <ul class="grid gap-3 sm:grid-cols-2 text-sm md:text-base">
+        <li class="flex gap-2"><span class="text-success">✓</span>Guia completo em PDF</li>
+        <li class="flex gap-2"><span class="text-success">✓</span>Checklist do dia da prova</li>
+        <li class="flex gap-2"><span class="text-success">✓</span>Resumo de placas</li>
+        <li class="flex gap-2"><span class="text-success">✓</span>Erros que mais reprovam</li>
+        <li class="flex gap-2"><span class="text-success">✓</span>Controle do nervosismo</li>
+        <li class="flex gap-2"><span class="text-success">✓</span>Prova teórica e prática</li>
+        <li class="flex gap-2"><span class="text-success">✓</span>Acesso imediato</li>
+        <li class="flex gap-2"><span class="text-success">✓</span>Garantia de 7 dias</li>
+      </ul>
+      <div class="mt-8 rounded-2xl bg-gradient-soft p-6 text-center">
+        <p class="text-sm font-medium text-slate-600">De <span class="line-through">R$97</span> por apenas</p>
+        <p class="mt-1 text-5xl md:text-6xl font-extrabold tracking-tight text-brand-800">R$19,90</p>
+        <p class="text-xs text-slate-500">pagamento único</p>
+        <div class="mt-6 flex justify-center">
+          <a href="https://pay.wiapy.com/0xRMHrqGBl" onclick="trackCheckout(event)" rel="noopener"
+             class="inline-flex w-full max-w-xl items-center justify-center gap-2 rounded-xl bg-gradient-cta text-white font-extrabold shadow-cta animate-pulse-cta px-6 py-5 text-lg md:text-xl">
+            QUERO ACESSAR O KIT POR R$19,90 →
+          </a>
+        </div>
+        <p class="mt-3 text-xs text-slate-500">Pagamento seguro • Acesso imediato • Material digital</p>
+      </div>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+        <div class="flex flex-col items-center gap-1 rounded-xl bg-brand-50 text-brand-800 p-3"><span>🔒</span><span class="font-semibold">Compra segura</span></div>
+        <div class="flex flex-col items-center gap-1 rounded-xl bg-brand-50 text-brand-800 p-3"><span>🛡️</span><span class="font-semibold">Garantia 7 dias</span></div>
+        <div class="flex flex-col items-center gap-1 rounded-xl bg-brand-50 text-brand-800 p-3"><span>📱</span><span class="font-semibold">Acesso no celular</span></div>
+        <div class="flex flex-col items-center gap-1 rounded-xl bg-brand-50 text-brand-800 p-3"><span>⬇️</span><span class="font-semibold">Prático e direto</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIA -->
+<section class="py-16 md:py-24 bg-white">
+  <div class="mx-auto max-w-3xl px-4 md:px-6">
+    <div class="flex flex-col md:flex-row items-center gap-6 rounded-3xl border-2 border-brand-800/20 bg-white p-8 text-center md:text-left shadow-soft">
+      <div class="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-gradient-hero text-white text-3xl shadow-glow">🛡️</div>
+      <div>
+        <h3 class="text-2xl md:text-3xl font-extrabold">Garantia tranquila de 7 dias</h3>
+        <p class="mt-2 text-slate-600">Acesse o material, veja os checklists e revise os conteúdos. Se sentir que o kit não te ajudou a se preparar melhor para o exame, você pode solicitar reembolso dentro do prazo de garantia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-16 md:py-24 bg-gradient-soft">
+  <div class="mx-auto max-w-3xl px-4 md:px-6">
+    <div class="mx-auto mb-10 max-w-3xl text-center">
+      <span class="mb-3 inline-block rounded-full bg-brand-50 text-brand-800 px-3 py-1 text-xs font-semibold uppercase tracking-wider">FAQ</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Dúvidas frequentes</h2>
+    </div>
+    <div class="divide-y border rounded-2xl bg-white">
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">O acesso é imediato?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">Sim. Após a confirmação da compra, você recebe as instruções para acessar o material digital.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">O material é físico ou digital?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">É 100% digital. Você pode acessar pelo celular, computador ou tablet.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">Serve para prova teórica e prática?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">Sim. O material traz orientações para revisão teórica, placas, cuidados na prática, checklist e erros comuns.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">Serve para quem já reprovou?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">Sim. O kit também ajuda quem já reprovou a entender melhor o que revisar e o que evitar na próxima tentativa.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">Posso estudar pelo celular?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">Sim. O material pode ser acessado pelo celular.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">O kit garante aprovação?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">Não. A aprovação depende do seu desempenho, das aulas, da prática e das regras do exame. O kit serve para melhorar sua preparação, organização e confiança.</p></details>
+      <details class="group p-5"><summary class="cursor-pointer font-semibold flex justify-between items-center">Por quanto tempo terei acesso?<span class="ml-2 group-open:rotate-180 transition">▾</span></summary><p class="mt-3 text-slate-600">O acesso será conforme configurado na plataforma de venda.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="relative overflow-hidden bg-gradient-hero text-white py-20 md:py-28">
+  <div class="absolute inset-0 opacity-20 pointer-events-none">
+    <div class="absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 rounded-full bg-cta blur-3xl"></div>
+  </div>
+  <div class="relative mx-auto max-w-3xl px-4 md:px-6 text-center">
+    <div class="mb-4 text-cta-soft text-xl">★★★★★</div>
+    <h2 class="text-3xl md:text-5xl font-extrabold leading-tight tracking-tight">Não espere o dia da prova chegar para perceber que faltou preparação.</h2>
+    <p class="mt-4 text-lg text-white/90">Revise agora os pontos que mais importam e chegue no exame com mais calma, atenção e segurança.</p>
+    <div class="mt-8 flex justify-center">
+      <a href="https://pay.wiapy.com/0xRMHrqGBl" onclick="trackCheckout(event)" rel="noopener"
+         class="inline-flex w-full max-w-xl items-center justify-center gap-2 rounded-xl bg-gradient-cta text-white font-extrabold shadow-cta animate-pulse-cta px-6 py-5 text-lg md:text-xl">
+        QUERO ME PREPARAR POR R$19,90 →
+      </a>
+    </div>
+    <p class="mt-4 inline-flex items-center justify-center gap-2 text-sm text-white/70">⏱ Kit Aprovação Autoescola • Material digital • Acesso imediato</p>
+  </div>
+</section>
+
+<footer class="bg-brand-900 text-white/80 py-8">
+  <div class="mx-auto max-w-6xl px-4 md:px-6 text-center text-xs">
+    <p class="font-semibold text-white">Kit Aprovação Autoescola</p>
+    <p class="mt-2">Este material é de caráter educacional e não garante aprovação no exame. Não substitui aulas de autoescola, instrutor ou orientações do Detran.</p>
+    <p class="mt-2">© <span id="y"></span> Todos os direitos reservados.</p>
+  </div>
+</footer>
+</main>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
